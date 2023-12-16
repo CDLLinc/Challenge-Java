@@ -1,8 +1,6 @@
 package com.provincia.challenge.locations.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,17 +8,21 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Table(name = "regions")
-public class Region {
+public final class Region {
 
     @Id
-    private String id;
+    private final String id;
     @NotBlank
-    private String localizedName;
+    private final String localizedName;
     @NotBlank
-    private String englishName;
+    private final String englishName;
+
+    public Region(String id, String localizedName, String englishName) {
+        this.id = id;
+        this.localizedName = localizedName;
+        this.englishName = englishName;
+    }
 
 }

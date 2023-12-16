@@ -1,21 +1,23 @@
 package com.provincia.challenge.locations.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class RegionDTO {
+public final class RegionDTO {
 
     @JsonAlias("ID")
-    private String id;
+    private final String id;
 
     @JsonAlias("LocalizedName")
-    private String localizedName;
+    private final String localizedName;
 
     @JsonAlias("EnglishName")
-    private String englishName;
+    private final String englishName;
+
+    public RegionDTO(String id, String localizedName, String englishName) {
+        this.id = id;
+        this.localizedName = localizedName;
+        this.englishName = englishName;
+    }
 }

@@ -6,10 +6,10 @@ import com.provincia.challenge.locations.entity.Region;
 public class RegionMapper {
 
     public static Region mapRegionDTOToRegionEntity(RegionDTO regionDTO) {
-        Region region = new Region();
-        region.setId(regionDTO.getId());
-        region.setLocalizedName(regionDTO.getLocalizedName());
-        region.setEnglishName(regionDTO.getEnglishName());
-        return region;
+        return new Region(
+                regionDTO.getId(),
+                regionDTO.getLocalizedName(),
+                regionDTO.getEnglishName()
+                );
     }
 }

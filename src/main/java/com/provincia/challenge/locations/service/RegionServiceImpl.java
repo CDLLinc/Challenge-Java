@@ -36,6 +36,7 @@ public class RegionServiceImpl implements RegionService {
     @Override
     @Transactional(readOnly = true)
     public ResponseEntity<?> listOfExternalApi(){
+        // Obtenemos las regiones de la API de Accuweather
         List<RegionDTO> regionsFromApi = accuwheaterClientRest.getRegions(apiKey, language);
         return ResponseEntity.status(HttpStatus.OK).body(regionsFromApi);
     }
