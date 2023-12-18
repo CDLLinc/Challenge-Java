@@ -50,6 +50,7 @@ Ejemplos de datos para los endpints anteriores:
 - Nombre de ciudad: Junin
 - Código de ciudad: 1-2923_15_AL
 
+<br>
 Otros endpoints:
 
 GET /api/forecasts (Nos devuelve todos los registros del clima guardados en la base de datos) <br><br>
