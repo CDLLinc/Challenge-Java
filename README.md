@@ -52,6 +52,7 @@ Ejemplos de datos para los endpints anteriores:
 
 <br>
 Otros endpoints:
+<br>
 
 GET /api/forecasts (Nos devuelve todos los registros del clima guardados en la base de datos) <br><br>
 GET /api/forecast/id/{id} (Nos devuelve un registro del clima a través de su id) <br><br>
