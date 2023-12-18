@@ -56,4 +56,4 @@ Otros endpoints:<br><br>
 GET /api/forecasts (Nos devuelve todos los registros del clima guardados en la base de datos) <br><br>
 GET /api/forecast/id/{id} (Nos devuelve un registro del clima a través de su id) <br><br>
 GET /api/forecast/key/{key} (Nos devuelve un listado de registros del clima de una localidad a través de su clave de localidad (locationKey)) <br><br>
-GET /api/forecast/delete/{id} (Elimina un registro del clima a través del id) <br><br>
+DELETE /api/forecast/delete/{id} (Elimina un registro del clima a través del id) <br><br>
