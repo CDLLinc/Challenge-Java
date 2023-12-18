@@ -57,3 +57,13 @@ GET /api/forecasts (Nos devuelve todos los registros del clima guardados en la b
 GET /api/forecast/id/{id} (Nos devuelve un registro del clima a través de su id) <br><br>
 GET /api/forecast/key/{key} (Nos devuelve un listado de registros del clima de una localidad a través de su clave de localidad (locationKey)) <br><br>
 DELETE /api/forecast/delete/{id} (Elimina un registro del clima a través del id) <br><br>
+
+# Comentarios
+
+ - Se podría haber hecho la relación con la entidad City al guardar un registro del clima, en lugar de guardar la clave de la localidad en el registro del clima. Es decir, relacionar todo el objeto.
+ - Se podrían haber trabajado las variables de ambiente desde el dockerfile en lugar de definirlas en el application.properties.
+ - Sólo se consideraron algunos tests unitarios. Se podrían haber abarcado muchos más puntos para testear.
+
+ A fines prácticos y por cuestiones de tiempo no se hizo de esa forma. 
+ De igual manera, respecto a la base de datos relacional... El manejo de las relaciones se puede ver entre las otras clases.
+ 
