@@ -1,3 +1,7 @@
+# Contacto
+Celeste Daniela Luengo
+cdlcode@gmail.com
+
 # Verificar que tenemos instalado docker, si no está instalado debemos instalarlo para poder levantar la aplicación
 docker --version
 
