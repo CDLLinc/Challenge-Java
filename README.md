@@ -64,6 +64,6 @@ DELETE /api/forecast/delete/{id} (Elimina un registro del clima a través del id
  - Se podrían haber trabajado las variables de ambiente desde el dockerfile en lugar de definirlas en el application.properties.
  - Sólo se consideraron algunos tests unitarios. Se podrían haber abarcado muchos más puntos para testear.
 
- A fines prácticos y por cuestiones de tiempo no se hizo de esa forma. 
+ A fines prácticos y por cuestiones de tiempo no se hizo de esa forma. <br>
  De igual manera, respecto a la base de datos relacional... El manejo de las relaciones se puede ver entre las otras clases.
  
