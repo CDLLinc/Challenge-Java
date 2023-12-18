@@ -51,8 +51,7 @@ Ejemplos de datos para los endpints anteriores:
 - Código de ciudad: 1-2923_15_AL
 
 <br>
-Otros endpoints:
-<br>
+Otros endpoints:<br><br>
 
 GET /api/forecasts (Nos devuelve todos los registros del clima guardados en la base de datos) <br><br>
 GET /api/forecast/id/{id} (Nos devuelve un registro del clima a través de su id) <br><br>
