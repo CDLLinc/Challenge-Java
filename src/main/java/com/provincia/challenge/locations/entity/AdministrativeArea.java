@@ -1,5 +1,6 @@
 package com.provincia.challenge.locations.entity;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "administrative_areas")
+@ApiModel(value = "Entidad Modelo de un Área Administrativa", description = "Información completa que se almacena de un área administrativa")
 public class AdministrativeArea {
 
     @Id

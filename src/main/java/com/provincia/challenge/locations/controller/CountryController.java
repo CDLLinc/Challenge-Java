@@ -24,8 +24,8 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
-    @ApiOperation(value = "Obtener una lista de países"
-            ,notes = "Se obtiene una lista de países")
+    @ApiOperation(value = "Obtener y guardar una lista de países"
+            ,notes = "Se obtiene y se guarda una lista de países")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "El recurso se obtiene correctamente de la API externa y se guarda en la base de datos"),
             @ApiResponse(code = 200, message = "El recurso ya existe en la base de datos, se consulta desde ahí"),

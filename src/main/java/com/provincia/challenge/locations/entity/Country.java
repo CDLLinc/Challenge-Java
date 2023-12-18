@@ -1,5 +1,6 @@
 package com.provincia.challenge.locations.entity;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "countries")
+@ApiModel(value = "Entidad Modelo de un País", description = "Información completa que se almacena de un país")
 public final class Country {
 
     @Id

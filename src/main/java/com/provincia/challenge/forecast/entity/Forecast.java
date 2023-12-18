@@ -1,5 +1,6 @@
 package com.provincia.challenge.forecast.entity;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "forecast_daily")
+@ApiModel(value = "Entidad Modelo del Clima", description = "Información completa que se almacena de un registro del clima")
 public class Forecast {
 
     @Id

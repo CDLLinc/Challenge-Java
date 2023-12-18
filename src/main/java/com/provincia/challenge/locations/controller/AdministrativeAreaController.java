@@ -23,8 +23,8 @@ public class AdministrativeAreaController {
     @Autowired
     private AdministrativeAreaService administrativeAreaService;
 
-    @ApiOperation(value = "Obtener una lista de áreas administrativas a partir del código de un país"
-            ,notes = "Se obtiene una lista de áreas administrativas a partir del código de un país")
+    @ApiOperation(value = "Obtener y guardar una lista de áreas administrativas a partir del código de un país"
+            ,notes = "Se obtiene y se guarda una lista de áreas administrativas a partir del código de un país")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "El recurso se obtiene correctamente de la API externa y se guarda en la base de datos"),
             @ApiResponse(code = 200, message = "El recurso ya existe en la base de datos, se consulta desde ahí"),

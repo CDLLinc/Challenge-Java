@@ -26,8 +26,8 @@ public class ForecastController {
     @Autowired
     private ForecastService forecastService;
 
-    @ApiOperation(value = "Obtener el clima de una ciudad a partir de la clave de la ciudad (locationKey)"
-            ,notes = "Se obtiene el clima de una ciudad a partir de la clave de la ciudad (locationKey)")
+    @ApiOperation(value = "Obtener y guardar el clima de una ciudad a partir de la clave de la ciudad (locationKey)"
+            ,notes = "Se obtiene y guarda el clima de una ciudad a partir de la clave de la ciudad (locationKey)")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "El recurso se obtiene correctamente de la API externa y se guarda en la base de datos"),
             @ApiResponse(code = 200, message = "El recurso ya existe en la base de datos, se consulta desde ahí"),

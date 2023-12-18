@@ -23,8 +23,8 @@ public class CitiesController {
     @Autowired
     private CityService cityService;
 
-    @ApiOperation(value = "Obtener una lista de ciudades a partir del código de un país, el código del área administrativa y el nombre de la ciudad"
-            ,notes = "Se obtiene una lista de ciudades a partir del código de un país, el código del área administrativa y el nombre de la ciudad")
+    @ApiOperation(value = "Obtener y guardar una lista de ciudades a partir del código de un país, el código del área administrativa y el nombre de la ciudad"
+            ,notes = "Se obtiene y se guarda una lista de ciudades a partir del código de un país, el código del área administrativa y el nombre de la ciudad")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "El recurso se obtiene correctamente de la API externa y se guarda en la base de datos"),
             @ApiResponse(code = 200, message = "El recurso ya existe en la base de datos, se consulta desde ahí"),
