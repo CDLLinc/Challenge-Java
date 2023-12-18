@@ -9,4 +9,8 @@ public class Message {
 
     private String message;
 
+    public String getContent() {
+        return message;
+    }
+
 }

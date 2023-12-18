@@ -1,4 +1,4 @@
-package com.provincia.challenge.locations.exceptions;
+package com.provincia.challenge.exceptions;
 
 import com.provincia.challenge.messages.Message;
 import feign.FeignException;
@@ -15,14 +15,16 @@ public class Exceptions {
     @ExceptionHandler(FeignException.class)
     public ResponseEntity<?> handleFeignException(FeignException e) {
         String error = "Error calling AccuWeather API: {} ";
-        log.error(error.concat(e.getMessage()), e);
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(new Message(error.concat(e.getMessage())));
+        String message = error.concat(e.getMessage());
+        log.error(message, e);
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(new Message(message));
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<?> handleGeneralException(Exception e) {
         String error = "Error processing request: {} ";
-        log.error(error, e.getMessage(), e);
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new Message(error.concat(e.getMessage())));
+        String message = error.concat(e.getMessage());
+        log.error(message, e);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new Message(message));
     }
 }

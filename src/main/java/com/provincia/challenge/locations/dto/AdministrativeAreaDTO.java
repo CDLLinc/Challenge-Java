@@ -1,6 +1,7 @@
 package com.provincia.challenge.locations.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.provincia.challenge.locations.entity.Country;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public final class RegionDTO {
+public class AdministrativeAreaDTO {
 
     @JsonAlias("ID")
     private String id;
@@ -16,7 +17,6 @@ public final class RegionDTO {
     @JsonAlias("LocalizedName")
     private String localizedName;
 
-    @JsonAlias("EnglishName")
-    private String englishName;
-
+    @JsonAlias("CountryID")
+    private Country country;
 }
