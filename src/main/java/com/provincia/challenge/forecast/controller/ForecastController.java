@@ -23,8 +23,12 @@ import java.util.Optional;
 @Api(tags = "Controlador del Clima")
 public class ForecastController {
 
+    private final ForecastService forecastService;
+
     @Autowired
-    private ForecastService forecastService;
+    public ForecastController(ForecastService forecastService){
+        this.forecastService = forecastService;
+    }
 
     @ApiOperation(value = "Obtener y guardar el clima de una ciudad a partir de la clave de la ciudad (locationKey)"
             ,notes = "Se obtiene y guarda el clima de una ciudad a partir de la clave de la ciudad (locationKey)")
